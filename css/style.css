@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --maincolor: #22CB5C;
+    --whitecolor: #fff;
+    --bgcolor1: #0D0D0D;
+    --bgcolor2: #242B2E;
+    --fonts: 'Poppins', sans-serif;
+}
+
+/* css of navbar strt */
+.main-navbar .navbar-brand {
+    color: var(--whitecolor) !important;
+}
+
+.navbar {
+    background-color: var(--bgcolor1);
+}
+
+.main-navbar .navbar-nav .nav-item .nav-link {
+    color: var(--whitecolor) !important;
+    font-size: 22px;
+    transition: 1s;
+    position: relative;
+}
+
+.main-navbar .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 1px solid var(--maincolor) ;
+    transition: 1s;
+    color: var(--whitecolor) !important;
+}
+
+
+/* css of navbar over */
+
+
+/* banner css strt */
+.main-banner .banner-text {
+    padding-top:300px;
+    text-align: center;
+}
+
+.main-banner {
+    height: 100vh;
+    background-color: var(--bgcolor1);
+}
+
+.main-banner .banner-text h1 {
+    font-size: 100px;
+    letter-spacing: 3px;
+    color: var(--maincolor);
+}
+
+.main-banner .banner-text p {
+    font-size: 30px;
+    color: var(--maincolor);
+
+}
+
+.main-banner .banner-text p span {
+    color: var(--whitecolor);
+}
+
+.main-banner .banner-text button {
+    border-radius: 20px;
+    width: 15%;
+    height: 35px;
+    background-color: var(--maincolor);
+    color: var(--whitecolor);
+}
+
+.main-banner .banner-text h1 span {
+    color: var(--whitecolor);
+}
+
+.main-banner .icons {
+    padding-top: 150px;
+    float: right;
+    font-size: 25px;
+    
+}
+.icons i{
+    margin-right: 10px; 
+    color: var(--whitecolor);
+}
+.icons i:hover{
+    color: var(--maincolor);
+}
+
+/* banner css over */
+/* about css strt from here */
+.main-about {
+    background-color: var(--bgcolor2);
+}
+
+.main-about .about-img img {
+    padding-top: 50px;
+}
+
+.main-about .about-text {
+    padding-top: 50px;
+}
+
+.main-about .about-text h2 {
+    color: var(--maincolor);
+}
+
+.main-about .about-text h2 span {
+    color: var(--whitecolor);
+}
+
+.main-about .about-text p {
+
+    font-size: 20px;
+    color: var(--whitecolor);
+}
+
+.main-about .about-text p span {
+    color: var(--maincolor);
+}
+
+.main-about .about-text h5 {
+    color: var(--whitecolor);
+}
+
+/* about css over from here */
+
+
+/* service css strt from here */
+.main-service .service-text{
+    /* background-color: var(--bgcolor2) !important; */
+}
+
+.main-service .text h3{
+    text-align: center;
+    color: var(--maincolor);
+}
+.main-service .main-card{
+    padding: 100px 0;
+
+}
+.main-service .card{
+
+    background-color: var(--bgcolor2);
+    color: white;
+}
+.main-service .service-text i{
+    font-size: 30px;
+    color: var(--maincolor) !important;
+
+}
+.main-service{
+    background-color: var(--bgcolor1);
+}
+
+/* service css over from here */
+
+
+/* resume css strt */
+.main-resume .text{
+    padding-top: 20px;
+    text-align: center;
+}
+.main-resume{
+    height: 40vh;
+   background-color: var(--bgcolor2);
+}
+
+.main-resume .resume-text h3{
+    border-bottom: 3px solid var(--whitecolor
+    );
+    width: 25%;
+    padding-top: 20px;
+}
+.main-resume .text h3, .resume-text h3{
+    color: var(--maincolor);
+
+}
+.main-resume .resume-text h4{
+    padding-top: 20px;
+    color: var(--whitecolor);
+}
+
+
+
+
+/* resume css over */
+/* project section css  strt*/
+
+.main-project{
+    background-color: var(--bgcolor1);
+}
+.main-project .project-text h3{
+    text-align: center;
+    padding: 20px;
+    color: var(--maincolor);
+
+}
+.main-project  .project-img{
+    padding: 70px;
+
+}
+.main-project  .project-img img:hover{
+    content: 'view project';
+    opacity: 0.5;
+    transition: 0.4;
+    
+    position: relative;
+
+
+}
+
+/* project section css over */
+
+
+
+/* SKills */
+.skills-sec{
+    background-color: var(--bgcolor1);
+    padding: 50px 0;
+}
+.progress{
+    margin-bottom: 20px;
+}
+.progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 13px !important;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+.progress-bar{
+    background-color: var(--maincolor) !important;
+}
+/* SKills */
+
+
+.main-service{
+    padding: 50px 0;
+}
