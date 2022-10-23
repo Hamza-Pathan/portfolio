@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,16 +24,19 @@
 .navbar {
     background-color: var(--bgcolor1);
 }
-
+.navbar .fa-bars{
+    color: #fff;
+}
 .main-navbar .navbar-nav .nav-item .nav-link {
     color: var(--whitecolor) !important;
-    font-size: 22px;
+    font-size: 19px;
     transition: 1s;
     position: relative;
+    margin-right: 15px;
 }
 
 .main-navbar .navbar-nav .nav-item .nav-link:hover {
-    border-bottom: 1px solid var(--maincolor) ;
+    border-bottom: 2px solid var(--maincolor) ;
     transition: 1s;
     color: var(--whitecolor) !important;
 }
@@ -70,8 +74,8 @@
 
 .main-banner .banner-text button {
     border-radius: 20px;
-    width: 15%;
-    height: 35px;
+    width: 17%;
+    height: 38px;
     background-color: var(--maincolor);
     color: var(--whitecolor);
 }
@@ -87,7 +91,7 @@
     
 }
 .icons i{
-    margin-right: 10px; 
+    margin-right: 15px; 
     color: var(--whitecolor);
 }
 .icons i:hover{
@@ -97,6 +101,7 @@
 /* banner css over */
 /* about css strt from here */
 .main-about {
+    height: 80vh;
     background-color: var(--bgcolor2);
 }
 
@@ -105,7 +110,7 @@
 }
 
 .main-about .about-text {
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .main-about .about-text h2 {
@@ -138,12 +143,16 @@
     /* background-color: var(--bgcolor2) !important; */
 }
 
+.main-service .main-card .service-text p{
+    color: #fff;
+}
+
 .main-service .text h3{
     text-align: center;
     color: var(--maincolor);
 }
 .main-service .main-card{
-    padding: 100px 0;
+    padding: 50px 0;
 
 }
 .main-service .card{
@@ -156,7 +165,12 @@
     color: var(--maincolor) !important;
 
 }
+.main-service .text h3{
+    /* padding-top: 30px; */
+}
 .main-service{
+  
+    /* height: 70vh; */
     background-color: var(--bgcolor1);
 }
 
@@ -165,8 +179,12 @@
 
 /* resume css strt */
 .main-resume .text{
-    padding-top: 20px;
+    padding-top: 50px;
     text-align: center;
+}
+.main-resume .resume-text{
+    padding-top: 40px;
+
 }
 .main-resume{
     height: 40vh;
@@ -186,6 +204,7 @@
 .main-resume .resume-text h4{
     padding-top: 20px;
     color: var(--whitecolor);
+    font-size: 19px;
 }
 
 
@@ -195,16 +214,17 @@
 /* project section css  strt*/
 
 .main-project{
-    background-color: var(--bgcolor1);
+    height: 80vh;
+    background-color:var(--bgcolor2);
 }
 .main-project .project-text h3{
     text-align: center;
-    padding: 20px;
+    padding: 70px;
     color: var(--maincolor);
 
 }
 .main-project  .project-img{
-    padding: 70px;
+    padding: 50px;
 
 }
 .main-project  .project-img img:hover{
@@ -222,9 +242,24 @@
 
 
 /* SKills */
+
+.skills-sec .skill-text h3{
+    margin-bottom: 50px;
+    color: var(--maincolor);
+    
+    text-align: center;
+}
 .skills-sec{
+    height: auto;
+    padding: 100px 0;
     background-color: var(--bgcolor1);
-    padding: 50px 0;
+}
+.skills-sec .text{
+    padding-top: 10px;
+    color: var(--whitecolor) !important; 
+}
+.skills-sec .text h1{
+    font-size: 15px;
 }
 .progress{
     margin-bottom: 20px;
@@ -233,7 +268,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 13px !important;
+    height: 15px !important;
     overflow: hidden;
     font-size: .75rem;
     background-color: #e9ecef;
@@ -248,3 +283,196 @@
 .main-service{
     padding: 50px 0;
 }
+/* comntact section css strt */
+
+.main-contact .text{
+    padding-top: 50px;
+    text-align: center;
+}
+.main-contact .contact-text h4{
+    /* border-bottom: 2px solid var(--whitecolor) */
+    color: var(--maincolor);
+}
+.contact-text p {
+    color: #fff;
+    font-size: 18px;
+}
+.main-contact .text h3{
+    color: var(--maincolor);
+}
+.main-contact .contact-text h5{
+    color: var(--whitecolor);
+}
+.main-contact{
+    background-color: var(--bgcolor1);
+}
+.main-contact .contact-text input{
+    width: 100%;
+    border-radius: 20px;
+}
+.main-contact .contact-text button{
+    width: 40%;
+    height: 35px;
+    color: var(--whitecolor);
+    border: none;
+    background-color: var(--maincolor);
+    border-radius: 20px;
+}
+.main-contact .contact-icons{
+  margin-bottom: 20px;
+}
+.contact-icons h5{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.main-contact .contact-text{
+    padding-top: 20px;
+}
+.main-contact .other{
+    display: flex;
+}
+.contact-text form input{
+    padding: 0 15px;
+    height: 35px;
+    border-radius: 5px;
+}
+.contact-text form h5{
+    font-size: 15px;
+}
+/* comntact section css over */
+
+/* media quiry strts from here from 300 to 390 */
+@media  screen and (min-width:300px) and  (max-width:389px) {
+    .main-banner .banner-text {
+        padding-top: 242px;
+        text-align: center;
+    }
+    .main-banner .banner-text h1 {
+        font-size: 38px;
+        letter-spacing: 3px;
+        color: var(--maincolor);
+    }
+    .main-banner .banner-text p {
+        font-size: 20px;
+        color: var(--maincolor);
+    }
+    .main-banner .banner-text button {
+        border-radius: 20px;
+        width: 45%;
+        border: none;
+        /* padding-top: 20px; */
+        height: 35px;
+        background-color: var(--maincolor);
+        color: var(--whitecolor);
+    }
+    .main-banner .icons {
+        padding-top: 213px;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        float: initial;
+    }
+    .main-about {
+        height: auto;
+        background-color: var(--bgcolor2);
+    }
+    .main-about .about-text h2 {
+        text-align: center;
+        color: var(--maincolor);
+    }
+    .main-about .about-text p {
+        font-size: 20px;
+        text-align: center;
+        color: var(--whitecolor);
+    }
+    .main-resume {
+        height: auto;
+        background-color: var(--bgcolor2);
+    }
+    .main-resume .resume-text h3 {
+        border-bottom: 3px solid var(--whitecolor );
+        width: 41%;
+        padding-top: 20px;
+    }
+    .main-project .project-img {
+       
+        padding: 26px 30px;
+        text-align: center;
+    }
+    .main-project {
+        height: auto;
+        background-color: var(--bgcolor2);
+    }
+
+    
+
+    
+}
+/* media quiry end of 300 to 390 */
+/* media quiry from 391 to 490 strt */
+
+@media screen and (min-width:390px)  and (max-width:490px) {
+
+    .main-banner .banner-text {
+        padding-top: 395px;
+        text-align: center;
+    }
+    .main-banner .banner-text h1 {
+        font-size: 38px;
+        letter-spacing: 3px;
+        color: var(--maincolor);
+    }
+    .main-banner .banner-text p {
+        font-size: 20px;
+        color: var(--maincolor);
+    }
+    .main-banner .banner-text button {
+        border-radius: 20px;
+        width: 38%;
+        /* padding-top: 20px; */
+        height: 35px;
+        background-color: var(--maincolor);
+        color: var(--whitecolor);
+    }
+    .main-banner .icons {
+        padding-top: 298px;
+        float: right;
+        font-size: 25px;
+    }
+    .main-about {
+        height: auto;
+        background-color: var(--bgcolor2);
+    }
+    .main-about .about-text h2 {
+        text-align: center;
+        color: var(--maincolor);
+    }
+    .main-about .about-text p {
+        font-size: 20px;
+        text-align: center;
+        color: var(--whitecolor);
+    }
+    .main-resume {
+        height: auto;
+        background-color: var(--bgcolor2);
+    }
+    .main-resume .resume-text h3 {
+        border-bottom: 3px solid var(--whitecolor );
+        width: 41%;
+        padding-top: 20px;
+    }
+    .main-project .project-img {
+       
+        padding: 26px 50px;
+        text-align: center;
+    }
+    .main-project {
+        height: auto;
+        background-color: var(--bgcolor2);
+    }
+
+
+    
+}
+/* media quiry from 391 to 490 over */
+/* media quiry for iphone 12 */
