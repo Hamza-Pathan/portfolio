@@ -414,7 +414,7 @@
 @media screen and (min-width:390px)  and (max-width:490px) {
 
     .main-banner .banner-text {
-        padding-top: 395px;
+        padding-top: 245px;
         text-align: center;
     }
     .main-banner .banner-text h1 {
@@ -429,27 +429,30 @@
     .main-banner .banner-text button {
         border-radius: 20px;
         width: 38%;
+        border: none;
         /* padding-top: 20px; */
         height: 35px;
         background-color: var(--maincolor);
         color: var(--whitecolor);
     }
     .main-banner .icons {
-        padding-top: 298px;
-        float: right;
+        padding-top: 170px;
+        float: initial;
         font-size: 25px;
+        display: flex;
+        justify-content: center;
     }
     .main-about {
         height: auto;
         background-color: var(--bgcolor2);
     }
     .main-about .about-text h2 {
-        text-align: center;
+       
         color: var(--maincolor);
     }
     .main-about .about-text p {
         font-size: 20px;
-        text-align: center;
+        
         color: var(--whitecolor);
     }
     .main-resume {
